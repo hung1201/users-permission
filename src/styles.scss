@@ -1,0 +1,112 @@
+.app {
+  background-color: #bfbcbc;
+  padding: 10px 15px;
+  height: 100vh;
+  .tag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    width: 120px ;
+    >svg {
+      width: 20px;
+    }
+  }
+  .app__container {
+    margin-top: 10px;
+    padding: 15px 20px ;
+    background-color: #fff;
+    &-main{
+      .MuiButtonBase-root.MuiTab-root {
+        max-width: none;
+        min-width: none;
+        flex: 1;
+      }
+      .MuiPaper-root {
+        box-shadow: none;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: #aaa;
+          bottom: 1px;
+          z-index: 1;
+        }
+        position: relative;
+      }
+      .MuiTab-textColorPrimary.Mui-selected{
+        color: #f59b60;
+        font-weight: 600;
+        // font-size: 16px;
+      }
+      .PrivateTabIndicator-root-1 {
+        background-color: #f59b60;
+        height: 5px;
+        z-index: 2;
+        
+      }
+      .actions{
+        display: flex;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: space-between;
+        &__search {
+          box-sizing: border-box;
+          width: 49%;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          padding-right: 10px;
+          display: flex;
+          align-items: center;
+          box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+          overflow: hidden;
+          >input {
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 14px 10px;
+            font-size: 16px;
+            font-style: italic;
+          }
+          >svg {
+            font-size: 24px;
+            font-weight: 600;
+          }
+        }
+        >button {
+         background-color: #148bd9;
+         color: #fff;
+         border-radius: 26px;
+         padding: 12px 15px;
+         display: flex;
+         align-items: center;
+          >span {
+            >svg{
+              width: 28px;
+              margin-right: 15px;
+            }
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: capitalize;
+          }
+        }
+      }
+      .users__list {
+        .user__card {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          .user__icon {
+            
+          }
+          .user__info{
+            
+          }
+        }
+      }
+    }
+  }
+}
