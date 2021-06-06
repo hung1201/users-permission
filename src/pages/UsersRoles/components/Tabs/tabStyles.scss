@@ -1,0 +1,34 @@
+.MuiPaper-root {
+    box-shadow: none !important;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #aaa;
+        bottom: 1.5px;
+        z-index: 1;
+    }
+}
+
+.MuiButtonBase-root.MuiTab-root {
+    max-width: none !important;
+    min-width: none !important;
+    flex: 1 !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+    color: #f59b60 !important;
+    font-weight: 600 !important;
+}
+
+.MuiTabs-indicator {
+    background-color: #f59b60 !important;
+    height: 5px !important;
+    z-index: 2 !important;
+}
+
+.MuiTab-wrapper {
+    text-transform: capitalize !important;
+}

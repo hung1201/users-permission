@@ -1,0 +1,53 @@
+.rolesActions {
+    >button {
+        background-color: #148bd9;
+        margin-left: auto;
+        color: #fff;
+        border-radius: 26px;
+        padding: 9px 16px 9px 12px;
+        display: flex;
+        align-items: center;
+        >span {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: capitalize;
+            >svg {
+                width: 20px;
+                margin-right: 15px;
+            }
+        }
+        &:hover {
+            background-color: #148ad9ea;
+        }
+    }
+}
+
+.rolesTable {
+    margin-top: 20px;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.124);
+}
+
+.rolesButtons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    >button {
+        padding: 10px 46px;
+        font-size: 18px;
+        &:first-child {
+            border-color: rgb(242, 131, 0);
+            >span {
+                text-transform: initial;
+                color: rgb(242, 131, 0);
+            }
+        }
+        &:last-child {
+            background-color: rgb(242, 131, 0);
+            >span {
+                color: #fff;
+                font-weight: 700;
+            }
+        }
+    }
+}

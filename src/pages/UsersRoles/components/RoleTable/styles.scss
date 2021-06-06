@@ -1,0 +1,84 @@
+.MuiPaper-root {
+    &.tableRoles {
+        &::after {
+            display: none;
+        }
+    }
+    >.MuiTable-root {
+        .actionColumn {
+            border-right: 1px solid #797979;
+        }
+        >.MuiTableHead-root {
+            background-color: #454B4D !important;
+            >.MuiTableRow-head {
+                >.MuiTableCell-head {
+                    color: #fff;
+                    text-align: center;
+                    font-weight: 600;
+                    padding-top: 10px !important;
+                    padding-bottom: 10px !important;
+                }
+            }
+        }
+        >.MuiTableBody-root {
+            >.MuiTableRow-root {
+                >.MuiTableCell-body {
+                    border-bottom: none !important;
+                    padding: 10px 10px 0 10px;
+                    >span {
+                        display: block;
+                        background-color: #f2f2f2;
+                        line-height: 2.8;
+                        padding-left: 10px;
+                    }
+                }
+                &:last-of-type {
+                    >.MuiTableCell-body {
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+        }
+        >.tableFooter {
+            >.tablePagination {
+                >.MuiTablePagination-root {
+                    >.MuiTablePagination-toolbar {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        p {
+                            display: none;
+                        }
+                        >.MuiTablePagination-input {
+                            display: none;
+                        }
+                        >div {
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-60%);
+                            margin-right: 5px;
+                            &:last-child {
+                                display: flex;
+                                align-items: center;
+                                >button {
+                                    background-color: #fff;
+                                    border-radius: 5px !important;
+                                    padding: 0 5px !important;
+                                    >span {
+                                        >svg {
+                                            font-size: 30px;
+                                        }
+                                    }
+                                    &:last-child {
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
